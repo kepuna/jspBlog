@@ -1,0 +1,13 @@
+body,ul,ol,li,p,pre,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;}
+body{background-color:#eee;font-size: 12px;font-family:"Î¢ÈíÑÅºÚ";margin: 0 auto;}
+img{border: none;}
+li{list-style: none;}
+input,select,textarea,button{outline: none;border: none;}
+textarea{resize: none;} 
+a{text-decoration: none;color: #656565;}
+
+.clearfix:after{content: "";display: block;clear: both}
+.clearfix{zoom: 1;}
+
+.fl{float:left;}
+.fr{float: right}

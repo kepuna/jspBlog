@@ -1,0 +1,504 @@
+.container{
+    width: 1210px;
+    margin: 0 auto;
+}
+.header-container{
+	width: 80%;
+}
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/Nexa_Free_Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*============分页的样式=================*/
+.page{
+    width: 100%;height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.page a{
+    display: inline-block;
+    font-size:16px;color:#32C1A1;
+    border: 1px solid #32C1A1;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 6px 12px;
+}
+.page a:hover,.page a:active,.page a.currentRed{
+    color: #fff;
+    background-color: #32C1A1;
+}
+/*===回到顶部样式==*/
+#btnToTop{
+    width: 40px;
+    height: 40px;
+	display:none;
+    background: url("../images/top_bg.png") no-repeat left top;
+    position: fixed; left: 50%;bottom: 30px;margin-left: 620px;
+}
+#btnToTop:hover{
+    background: url("../images/top_bg.png") no-repeat left -40px;
+}
+
+/*===========底部yang=============*/
+footer{
+	position:relative;top:70px;
+    width: 100%;height: 70px;line-height: 70px;
+    background-color: #333;
+}
+footer p {
+    font-size: 16px;color: #fff;text-align:center;
+}
+/*===============以上为公用的样式=================*/
+.top-header{
+	position:fixed;z-index:9999;
+    width: 100%;height: 70px;
+    background:rgba(0,0,0,.6);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+nav.top-nav{
+    margin-left: 60%;width:350px;height: 70px;
+}
+.top-nav li{
+    display: inline-block;
+}
+.top-nav li a{
+    display: inline-block;
+    width:100px ;height: 64px;line-height: 70px;text-align: center;
+    font-size: 1.6em;color: #fff;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.top-nav li a:hover{ border-bottom: 6px solid #fff;}
+
+/*大图的样式*/
+div.banner-big{
+     width: 100%;height: 800px;
+     background: url("../images/banner_bg.jpg") no-repeat;
+     background-size: cover;
+}
+.top-header-info{
+    position: absolute;top: 60%;
+    font-family: 'nexa_boldregular';font-size: 4em; color: #FFF;
+}
+/*联系我 样式*/
+.contacts{
+	display: inline-block;
+    position: relative;top: 74%;left: 10%;
+    padding: 0 3%;
+    height: 50px;line-height: 50px;
+    background: rgba(0,0,0,.3);
+    border: 2px solid rgba(255,255,255,0.8);
+    font-family: 'nexa_boldregular'; font-size: 1.5em;color: #fff;
+
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+}
+.contacts:hover{
+    cursor: pointer;
+    border:2px solid #fff;
+    background: rgba(0,0,0,.6);
+}
+.contacts .line{position:absolute;
+    background:none;
+    -moz-transition:ease 0.4s;
+    -o-transition:ease 0.4s;
+    -webkit-transition:ease 0.4s;
+    transition:ease 0.4s;
+}
+.contacts:hover .line{background:#fff;}
+.contacts .line-top{width:0px;
+    height:2px;
+    left:-110%;
+    top:-2px;}
+
+.contacts:hover .line-top{width:100%;
+    left:-2px;}
+
+
+.contacts .line-right{width:2px;
+    height:0px;
+    right:-2px;
+    top:-110%;}
+
+.contacts:hover .line-right{height:100%;
+    top:-2px;}
+
+
+.contacts .line-bottom{width:2px;
+    height:0px;
+    left:-2px;
+    bottom:-110%;}
+
+.contacts:hover .line-bottom{height:100%;
+    bottom:-2px;}
+
+.contacts .line-left{width:0px;
+    height:2px;
+    right:-110%;
+    bottom:-2px;}
+
+.contacts:hover .line-left{width:100%;
+    right:-2px;}
+/* ==================顶部样式结束 ============================*/
+
+
+/*文章*/
+div.article{width: 75%}
+ul.blog{ width:100%;}
+ul.blog li.blog-item{
+    float:left;margin: 10px 0;
+    width: 100%;
+    background:#fff;
+   /* border-radius:8px 8px 0 0;*/
+    box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all ;
+    -moz-transition: 0.5s all ;
+    -o-transition: 0.5s all ;
+}
+ul.blog li.blog-item:hover{
+    box-shadow: 0 2px 3px rgba(0,182,174,0.6);
+}
+/*文章标题的样式*/
+li.blog-item article h2 a{
+    display: block;margin-left:10px;height: 40px;line-height: 40px;
+    border-bottom: 1px dashed #ccc;
+    font-size:1.4em;color:#32C1A1;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all ;
+    -moz-transition: 0.5s all ;
+    -o-transition: 0.5s all ;
+}
+/*阅读全文的样式*/
+li.blog-item article a.article-detail{
+    display: inline-block;
+    padding: 6px;margin-left: 88%;margin-bottom: 10px;
+    font-size:1.5em;color: #FFF;
+    background:rgba(0,179,139,.8); 
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+}
+li.blog-item article h2 a:hover{
+    color: #1BAF5D;
+}
+/*文章内容的样式*/
+li.blog-item article .title-intro{
+	min-height: 70px;_height:70px;
+    padding: 10px;
+    font-size:1.2em;color: #aaa;
+}
+/*顶部时间日期的样式*/
+div.article-top-info{
+    width: 100%;height:50px;background:rgba(0,179,139,.8); 
+}
+ul.article-top-info{
+    margin-left: 10px;
+}
+ul.article-top-info li{
+    display: inline-block;
+    width: 150px;height: 50px;line-height: 50px;
+    font-size: 1.5em;color: #fff;
+}
+ul.article-top-info li img{
+    margin-right: 10px;
+}
+
+/*===主页-右边侧栏内容===*/
+.right-content{
+    width: 24%;margin:10px 0;
+}
+.search-box{
+    position: relative;
+    height: 50px;
+}
+.search-box input.search-content{
+    width: 98%;height: 32px;padding: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.6);
+}
+.search-box input.search-btn{
+    position: absolute;top: -1px;left: 246px;
+    width: 16%;
+    height: 42px;
+    background:#32C1A1;color: #fff;
+}
+/*全部分类的样式*/
+.article-category{
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+}
+/*题目*/
+div.article-category-title{
+    height: 30px;line-height: 30px;
+    font-family:"微软雅黑";font-weight:600;font-size:1.2em;text-indent: 2.5em;color: #fff;
+    background:#32C1A1 url("../images/category_title_icon.png") no-repeat;
+}
+/*分类列表*/
+.article-category-item a:hover{
+	background:rgba(255,23,31,.7);color:#fff;
+}
+.article-category-item a{
+   display: block; height: 30px;line-height: 30px;
+   margin:5px;
+   border-bottom: 1px solid #ccc;
+   font-size: 1.2em;color: #aaa;text-indent: 0.5em;
+   transition:.5s ease 0;
+}
+.article-category-item a span{
+    display: inline-block;margin:5px 10px 5px 0;
+    width: 2%;height: 5%;
+    background-color: #aaa;
+}
+
+/*================博客详细内容页面样式===================*/
+.blogDetail-container{
+	position:relative;top:70px;min-height: 500px;_height: 500px;
+}
+.article-infor{
+    width: 800px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+
+/*文章题目*/
+.article-title{
+    height: 40px;line-height: 40px;margin: 15px 0 5px 0;
+    font-size: 28px;color: #00b7e9;text-indent: 1em;
+    border-left:6px solid #008FB5;
+}
+/*文章时间时期的样式*/
+article .date{
+    height: 25px;line-height: 25px;
+    font-size: 14px;color: #E2D5CC;text-indent: 3em;
+    border-bottom: 1px dashed #ccc;
+}
+/*文章内容的样式*/
+.article-content{
+    padding:10px;text-indent:2em;
+}
+.article-share span{
+    display: inline-block;float: left;
+    margin: 10px;
+    font-size: 14px;color: #000;
+}
+.article-share p{
+    padding: 0 0 10px 10px;
+    font-size: 14px;color: #000;
+    border-bottom: 1px dashed #ccc;
+}
+
+.share-qzone,.share-weixin,.share-xinlang{
+    display: inline-block;
+    margin: 10px 0;
+    width: 20px;height: 20px;
+}
+.share-qzone{
+    background: url("../images/qzone.jpg") no-repeat;
+    background-size: cover;
+}
+.share-weixin{
+    background: url("../images/weibo.png") no-repeat;
+    background-size: cover;
+}
+.share-xinlang{
+    background: url("../images/xinlang.png") no-repeat;
+    background-size: cover;
+}
+/*上一篇下一篇的样式*/
+.anotrer-article h3{
+    height: 40px;line-height: 40px;
+    color: #333;text-align: center;
+    border-bottom: 1px dashed #ccc;
+}
+.anotrer-article a{color: #008FB5;}
+.anotrer-article a:hover{color: #00b7e9;}
+/*评论表单的样式*/
+.comment{
+    height: 40px;line-height: 40px;margin: 5px 0;
+    font-size: 20px;font-weight:400;color:#00b7e9;text-indent: 1em;
+    border-left: 6px solid  #008FB5;
+}
+.comment-form{
+	width: 95%;
+	margin:2px auto;
+}
+.comment-form form{
+    font-size: 1.2em;
+    background: #fff; 
+}
+.comment-form [type="text"],.comment-form textarea{
+
+    padding: 8px;
+    width: 100%;height: 40px;
+    min-width: 100%;
+    max-width: 100%;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.2);
+}
+.comment-form input{height: 40px;}
+.comment-form textarea{ height: 100px;}
+.comment-form .button{
+    width: 14%;
+    margin: 10px;
+    display: inline-block;
+    background-color: #1B79C7;
+    padding: 4px 10px 4px 10px;
+    color: white;
+    text-shadow: 0px -1px 0px #0C3658;
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px #0C3658, 0px 3px 14px rgba(0,0,0,0.6);
+    cursor: pointer;
+
+}
+/*评论列表的样式*/
+.comments-list li{
+    width: 95%;margin: 20px auto;
+    background: #FCFCFC;
+    border-radius: 4px;
+    box-shadow:  0 0 2px rgba(0,0,0,0.6);
+}
+.comment-name{
+    padding-left: 10px;
+    height: 39px;line-height:39px;
+    font-size: 16px;color: #283035;
+    border-bottom:  1px dashed #ccc;
+}
+.comment-content{
+    padding: 10px;
+    font-size: 14px;color: #635E59;
+}
+.comment-time{
+    margin-right: 20px;
+    font-size: 12px;color: #9C99A2;
+    float: right;
+}
+/*右边侧栏样式*/
+.rightBar{
+    position:relative;z-index: -1;
+    margin: 20px;
+    width: 300px;height:400px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+/*个人资料的样式*/
+.my-info{
+    padding-left: 10px;
+    height: 40px;line-height: 40px;
+    font-size: 20px;color: #00b7e9;
+    border-bottom: 1px dashed #ccc;
+    text-shadow: 1px 1px  1px rgba(0,0,0,.2);;
+}
+.my-pic{
+    display: block;
+    margin: 10px auto;
+}
+.my-intro{
+    padding: 10px;
+    font-size: 14px;text-indent: 2em;
+}
+/*================博客后台管理页面======================*/
+.admin-header{
+	width:100%;height:70px;
+	background: linear-gradient(#777, #444);
+}
+.adminContainer{
+	min-height:500px;_height:500px;
+}
+nav.admin-nav{
+	width:80%;
+    margin: 50px auto;
+}
+ul.admin-nav li{display: inline-block;}
+ul.admin-nav li a{
+    display: inline-block;width: 100px;height: 50px;line-height: 50px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ccc),to(#fff));/*渐变背景*/
+    font-size: 18px;font-weight: 600;color: #333;text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+/*ul.admin-nav li.active,ul.admin-nav li a:hover{
+    height: 55px;
+    border-radius: 10px 10px 0 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#ccc));*//*渐变背景*//*
+}*/
+ul
+ul.admin-nav li.add-blog-button a{
+    border-radius: 50px ;
+    background: -webkit-gradient(linear,left top,left bottom,from(#5677B9),to(#3F5E9D));/*渐变背景*/
+}
+/* 博客管理页*/
+table.admin-table{
+    width: 80%;line-height: 24px;margin: 30px auto;
+    font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+    text-align: left; text-shadow: 0 1px 0 #fff;color: #444;
+    background: #f5f5f5;
+}
+table.admin-table th {
+   padding: 10px 15px;
+   background: linear-gradient(#777, #444);
+   font-weight: bold; color: #fff;
+   text-shadow: 0 1px 0 #000;
+}
+table.admin-table td { padding: 10px 15px;}
+table.admin-table tr { background: #ddd;}
+/*设置tr为偶数的样式*/
+table.admin-table tr:nth-child(odd) td {background: #f1f1f1;}
+
+
+/*添加分类*/
+.add-category,div.changePassword{
+	margin: 5px auto;padding:10px;
+	width:40%;height:300px;background-color: #fff;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+	border-radius:5px;
+}
+.add-category-form span,div.changePassword span{
+	display:block;margin:8px 0;
+	font-size:1.4em;font-weight:600;color:#333;
+}
+.add-category-form input[type="text"],div.changePassword input[type="password"]{
+	width:96%;height:32px;
+	padding:4px;
+	border: 1px solid #eee;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+.add-category-form input[type="text"]:hover,div.changePassword input[type="password"]:hover{
+	border: 1px solid #39b94e;
+}
+.add-category-form input[type="submit"],div.changePassword input[type="submit"],.addBlog-form input[type="submit"],.addBlog-form input[type="reset"]{
+	margin:10px 0;
+	width:20%;height:40px;
+	background-color: #39b94e;
+	font-size:1.6em;font-weight:600;color:#fff;
+	transition:ease .8s;
+}
+.add-category-form input[type="submit"]:hover,div.changePassword input[type="submit"]:hover,.addBlog-form input[type="submit"]:hover,.addBlog-form input[type="reset"]:hover{
+	cursor: pointer;
+	background-color: #c00;
+}
+/* 添加博客 */
+.addBlog-form .addBlog-form-item{
+	display:inline-block;margin:8px 0;
+	font-size:1.4em;font-weight:600;color:#333;
+}
+.addBlog-form input[type="text"]{
+	width:90%;height:22px;
+	padding:4px;
+	border: 1px solid #eee;
+}
+.addBlog-form select{
+	margin:5px;
+	height:32px;
+	border: 1px solid #aaa;
+}
+

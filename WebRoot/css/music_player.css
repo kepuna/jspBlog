@@ -1,0 +1,74 @@
+
+#music-player{
+    width: 100%;margin:10px 0;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+}
+/*cover*/
+#audio-img{
+    position: relative;margin-bottom: 5px;
+    width: 34%;height: 100px;background: red;
+    box-shadow: 0 0 2px rgba(0,0,0,.8);
+    float: left;
+}
+.audio-content{
+    width: 65%;height: 100px;
+    float: right;
+}
+
+#audio-info{
+    text-align: center;
+    color: #aaa;
+    text-shadow: 1px 1px 1px  rgba(0,0,0,.2);
+}
+#audio-info .artist{
+    font-weight: bold;
+}
+input#volume{
+    -webkit-appearance:none!important;
+    width: 95%;height: 4px;
+    margin-left: 2%;margin-bottom: 20px;
+    background: linear-gradient(#ffffff, #ebe7e6);
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.6);
+}
+input#volume::-webkit-slider-thumb{
+    -webkit-appearance:none!important;
+    background: url(../images/musicplayer/volume.png) no-repeat;
+    height: 21px;width: 10px;
+}
+/**/
+#audio-controls{
+    width: 80%;height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+#audio-controls a{
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 100%;
+    box-shadow: 0 1px 5px rgba(0,0,0,.8);
+
+}
+a#play,a#pause{ width:40px;height: 40px;}
+a#next,a#prev{width: 30px;height: 30px;}
+a#play {
+    background: url(../images/musicplayer/play.png)50% 50% no-repeat;
+}
+a#pause{
+    background: url(../images/musicplayer/pause.png)50% 50% no-repeat;
+}
+a#next{
+    background: url(../images/musicplayer/next.png)50% 50% no-repeat;
+}
+a#prev{
+    background: url(../images/musicplayer/prev.png)50% 50% no-repeat;
+}
+
+#playlist{
+    visibility: hidden;
+}
+
+
+
+

@@ -1,0 +1,98 @@
+/*登录模块的样式*/
+div.login{
+    width:20%;height: 70px;
+    background:rgba(233,78,56,.9);
+}
+div.login a{
+    display:block;
+    width:100px;height: 70px;line-height: 70px;
+    font-family: "Arial";font-size:18px;font-weight:400;color: #fff;
+    background: url("../images/login.png")0 50% no-repeat;
+}
+div.login a span{
+    margin-left: 28px;
+}
+span.admin-btn{
+    height: 70px;line-height: 70px;
+    font-size:18px;font-weight:400;color: #fff;
+}
+/*登录弹出层样式*/
+
+.button{
+    width:100px;
+    background:#32C1A1;
+    display:block;
+    margin:0 auto;
+    margin-top:1%;
+    padding:10px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+.button:hover{
+    background:#2288bb;
+}
+
+#login{
+    display:none;
+    width:80%;
+    margin:0 auto;
+    margin-top:8px;
+    margin-bottom:2%;
+    transition:opacity 1s;
+    -webkit-transition:opacity 1s;
+}
+
+#triangle{
+    width:0;
+    border-top:12px solid transparent;
+    border-right:12px solid transparent;
+    border-bottom:12px solid #32C1A1;
+    border-left:12px solid transparent;
+    margin:0 80%;
+}
+
+#login h1{
+    background:#32C1A1;
+    padding:15px 0;
+    font-size:140%;
+    font-weight:300;
+    text-align:center;
+    color:#fff;
+}
+
+#login form{
+    background:#f0f0f0;
+    padding:6% 4%;
+}
+
+#login input[type="text"],#login input[type="password"]{
+    width:92%;
+    background:#fff;
+    margin-bottom:4%;
+    border:1px solid #ccc;
+    padding:4%;
+    font-family:'Open Sans',sans-serif;
+    font-size:95%;
+    color:#555;
+}
+
+#login input[type="submit"],#login input[type="reset"]{
+    width:45%;
+    background:#32C1A1;
+    border:0;
+    padding:4%;
+    font-size:1.2em;font-weight:600;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+#login input[type="submit"]:hover,#login input[type="reset"]:hover{
+   background:rgba(233,78,56,.9);
+}
